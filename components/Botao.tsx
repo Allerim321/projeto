@@ -5,7 +5,7 @@ function Botao() {
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Acessar</Text>
+                <Text style={styles.buttonText}>Cadastre-se</Text>
             </TouchableOpacity>
         </View>
     );
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     },
 
     button: {
+        width: 320,
         backgroundColor: 'black',
         paddingVertical: 10,
         paddingHorizontal: 20,
