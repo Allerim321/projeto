@@ -13,8 +13,8 @@ function Login () {
     <Input texto="Senha:" placeholder="Digite sua senha"/>
     <Botao />
     <View style={styles.links}>
-    <Text>Cadastre-se</Text>
-    <Text>Esqueceu a senha?</Text>
+    <Text style={styles.cor}>Cadastre-se</Text>
+    <Text style={styles.cor}>Esqueceu a senha?</Text>
     </View>
     </View>
     )
@@ -27,10 +27,12 @@ const styles = StyleSheet.create({
       marginLeft: 80
     },
     links: {
-        color: "#011E83",
         margin: 20,
         justifyContent: "space-between",
         flexDirection: "row"
+    },
+    cor:{
+        color: "#011E83"
     }
   })
 
