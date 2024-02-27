@@ -9,8 +9,8 @@ function Login () {
     <View>
     <Header />
     <Text style={styles.texto}>Faça login para acessar o sistema</Text>
-    <Input />
-    <Input />
+    <Input texto="Email:" placeholder="Digite seu email"/>
+    <Input texto="Senha:" placeholder="Digite sua senha"/>
     <Botao />
     <View style={styles.links}>
     <Text>Cadastre-se</Text>
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
       marginLeft: 80
     },
     links: {
+        color: "#011E83",
         margin: 20,
         justifyContent: "space-between",
         flexDirection: "row"
