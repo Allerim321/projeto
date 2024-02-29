@@ -1,11 +1,11 @@
 import Input from "../components/Inputs";
 import Header from "../components/Header";
 import Botao from "../components/Botao";
-import {View, StyleSheet} from "react-native";
+import {View, StyleSheet, ScrollView} from "react-native";
 
 function Cadastro(){
     return(
-        <View>
+        <ScrollView>
         <View style={styles.cor}>
         <Header texto="Cadastre-se"/>
         </View>
@@ -16,7 +16,7 @@ function Cadastro(){
         <Input texto="Senha:" placeholder="Insira sua senha"/>
         <Input texto="Confirmar senha:" placeholder="Confirme sua senha"/>
         <Botao/>
-        </View>
+        </ScrollView>
     )
 }
 
