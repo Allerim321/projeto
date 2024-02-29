@@ -21,8 +21,12 @@ function Inventario(){
             <Bloco />
             <Bloco />
             <Bloco />
-            <Ionicons style={styles.add} name="add-circle-sharp" size={50} color="red" />
+            <Bloco />
+            <Bloco />
         </ScrollView>
+        <View>
+        <Ionicons style={styles.add} name="add-circle-sharp" size={50} color="red" />
+        </View>
         <View style={styles.footer}>
             <View style={styles.icons_footer}>
                 <MaterialCommunityIcons style={styles.separar_icons} name="camera-flip-outline" size={24} color="white" />
@@ -50,7 +54,8 @@ const styles = StyleSheet.create({
     icons_footer: {
         justifyContent: "center",
         flexDirection: "row",
-        margin: 20
+        margin: 20,
+        marginBottom: 0
     },
     separar_icons: {
         marginHorizontal: 10
@@ -58,7 +63,7 @@ const styles = StyleSheet.create({
     add: {
         position: "absolute",
         right: 10,
-        bottom: 200
+        bottom: 60
     }
 })
 
