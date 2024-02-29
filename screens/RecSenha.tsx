@@ -6,20 +6,29 @@ import {View, Text, StyleSheet} from "react-native";
 function RecSenha() {
     return(
         <View>
-            <Header/>
-            <Text style={styles.texto}>Insira seu email para recuperar a senha.</Text>
+          <View style={styles.cor}>
+            <Header texto="Recuperação de Senha"/>
+          </View>
+          <View style={styles.texto}>
+            <Text>Insira seu email para recuperar a senha.</Text>
+          </View>
             <Input texto="Email:" placeholder="Insira seu email"/>
             <Botao/>
         </View>
     )
 }
 
-
 const styles = StyleSheet.create({
 
+    cor: {
+        backgroundColor: "#011E83",
+        padding: 50,
+        paddingBottom: 20,
+        marginBottom: 20,
+    },
     texto: {
       margin: 20,
-      marginLeft: 80
+      alignItems: "center",
     }
   })
 

@@ -7,8 +7,11 @@ import React from 'react';
 function Login () {
     return(
     <View>
-    <Header />
-    <Text style={styles.texto}>Faça login para acessar o sistema</Text>
+      <View style={styles.cor_header}>
+        <Header texto="Login"/>
+      </View>
+    <View style={styles.texto}>
+    <Text >Faça login para acessar o sistema</Text></View>
     <Input texto="Email:" placeholder="Digite seu email"/>
     <Input texto="Senha:" placeholder="Digite sua senha"/>
     <Botao />
@@ -22,9 +25,15 @@ function Login () {
 
 const styles = StyleSheet.create({
 
+    cor_header: {
+      backgroundColor: "black",
+      padding: 50,
+      paddingBottom: 20,
+      marginBottom: 20,
+    },
     texto: {
-      margin: 20,
-      marginLeft: 80
+      alignItems: "center",
+      margin: 20
     },
     links: {
         margin: 20,
