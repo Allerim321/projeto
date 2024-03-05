@@ -1,4 +1,4 @@
-import {ScrollView, View, StyleSheet} from "react-native";
+import {ScrollView, View, StyleSheet, TouchableOpacity} from "react-native";
 import { Feather, Octicons, MaterialCommunityIcons, Foundation, Ionicons } from '@expo/vector-icons';
 import Bloco from "../components/Bloco";
 
@@ -24,9 +24,9 @@ function Inventario(){
             <Bloco />
             <Bloco />
         </ScrollView>
-        <View>
+        <TouchableOpacity>
         <Ionicons style={styles.add} name="add-circle-sharp" size={50} color="red" />
-        </View>
+        </TouchableOpacity>
         <View style={styles.footer}>
             <View style={styles.icons_footer}>
                 <MaterialCommunityIcons style={styles.separar_icons} name="camera-flip-outline" size={24} color="white" />
