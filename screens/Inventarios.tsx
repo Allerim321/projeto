@@ -1,4 +1,4 @@
-import {ScrollView, View, StyleSheet, TouchableOpacity} from "react-native";
+import {ScrollView, View, Text, StyleSheet, TouchableOpacity} from "react-native";
 import { Feather, Octicons, MaterialCommunityIcons, Foundation, Ionicons } from '@expo/vector-icons';
 import Bloco from "../components/Bloco";
 
@@ -8,6 +8,7 @@ function Inventario(){
         <ScrollView>
             <View style={styles.icons}>
             <Octicons name="three-bars" size={24} color="black" />
+            <Text>Lista</Text>
             <Feather name="search" size={24} color="black" />
             </View>
             <Bloco />
