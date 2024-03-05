@@ -7,7 +7,7 @@ import Inventario from "./screens/Inventarios";
 
 const App = () => {
   return(
-    <Inventario />
+    <Cadastro />
   )
 }
 
