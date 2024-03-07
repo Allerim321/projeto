@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     footer: {
         borderTopColor: "#CBCBCB",
         borderTopWidth: 2,
-        height: 60
+        height: 60,
     },
     icons_footer: {
         justifyContent: "center",

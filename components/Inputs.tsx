@@ -6,7 +6,7 @@ interface InputProps extends TextInputProps{
 }
 
 function Input({texto, placeholder, ...props}:InputProps){
-  const [hover, setHover] = useState('#ff0000')
+const [hover, setHover] = useState('#f5f5f5')
 
 const styles = StyleSheet.create({
     input: {
@@ -30,7 +30,11 @@ const styles = StyleSheet.create({
     return(
         <View>
         <Text style={styles.container}>{texto}</Text>
-        <TextInput {...props} style={styles.input} placeholder={placeholder}/>
+        <TextInput {...props} style={styles.input} placeholder={placeholder} onFocus={() =>{
+          setHover('#F39200')
+        }} onBlur={() =>{
+          setHover('#F5F5F5')
+        }} />
         </View>
 )}
 
