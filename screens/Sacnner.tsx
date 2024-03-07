@@ -1,4 +1,3 @@
-import AddInput from "../components/AddInputs"
 import Navbar_itens from "../components/Navbar_itens"
 import Footer from "../components/Footer"
 import {View, StyleSheet} from 'react-native'
@@ -9,13 +8,9 @@ function AddItems(){
 
     return(
         <>
-            <Navbar_itens titulo="Cadastro de itens"/>
+            <Navbar_itens titulo="Scanner"/>
             <View style={styles.container}>
-                <AddInput texto="N° Inventário"/>
-                <AddInput texto="Descrição"/>
-                <AddInput texto="Responsável"/>
-                <AddInput texto="Local"/>
-                <AddInput texto="Data de registro"/>
+                
             </View>
             <Footer/>
         </>
@@ -25,7 +20,6 @@ function AddItems(){
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        paddingHorizontal: 20
     }
 })
 

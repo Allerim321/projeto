@@ -4,10 +4,11 @@ import RecSenha from "./screens/RecSenha";
 import Load from "./screens/Load";
 import AddItems from "./screens/AddItems";
 import Inventario from "./screens/Inventarios";
+import Descrição from "./screens/Descricao";
 
 const App = () => {
   return(
-    <AddItems />
+    <Descrição />
   )
 }
 
