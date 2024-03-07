@@ -1,16 +1,12 @@
 import { StyleSheet, Text, View, TextInput, TextInputProps } from 'react-native';
+import { useState } from 'react';
 
 interface InputProps extends TextInputProps{
     texto: string
 }
 
 function Input({texto, placeholder, ...props}:InputProps){
-    return(
-        <View>
-        <Text style={styles.container}>{texto}</Text>
-        <TextInput {...props} style={styles.input} placeholder={placeholder}/>
-        </View>
-)}
+  const [hover, setHover] = useState('#ff0000')
 
 const styles = StyleSheet.create({
     input: {
@@ -20,8 +16,9 @@ const styles = StyleSheet.create({
         borderBottomColor: '#CDCDCD',
         borderRadius: 5,
         padding: 5,
-        backgroundColor: '#F5F5F5'
-
+        backgroundColor: '#F5F5F5',
+        borderWidth: 1,
+        borderColor: hover
       },
       container:{
         margin: 20,
@@ -29,5 +26,14 @@ const styles = StyleSheet.create({
         fontSize: 16
       },
 })
+
+    return(
+        <View>
+        <Text style={styles.container}>{texto}</Text>
+        <TextInput {...props} style={styles.input} placeholder={placeholder}/>
+        </View>
+)}
+
+
 
 export default Input

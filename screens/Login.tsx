@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
       margin: 20
     },
     links: {
+        width: 320,
         margin: 20,
         justifyContent: "space-between",
         flexDirection: "row"

@@ -13,8 +13,9 @@ function Botao() {
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
+        alignItems: 'baseline',
         marginTop: 20,
+        marginLeft: 20
     },
 
     button: {
