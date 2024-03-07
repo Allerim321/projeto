@@ -7,7 +7,7 @@ function Scanner(){
         <>
             <Navbar_itens titulo="Scanner"/>
             <View style={styles.container}>
-                <Image source={require("../assets/code_scaner.png")}/>
+                <Image style={styles.imagem} source={require("../assets/code_scaner.png")}/>
             </View>
             <Footer/>
         </>
@@ -17,6 +17,9 @@ function Scanner(){
 const styles = StyleSheet.create({
     container: {
         flex:1,
+    },
+    imagem: {
+        width: 100
     }
 })
 
