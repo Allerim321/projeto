@@ -7,7 +7,7 @@ function Scanner(){
         <>
             <Navbar_itens titulo="Scanner"/>
             <View style={styles.container}>
-                <Image  source={require("../assets/code_scaner.png")}/>
+                <Image source={require("../assets/code_scaner.png")}/>
             </View>
             <Footer/>
         </>
