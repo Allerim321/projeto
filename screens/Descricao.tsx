@@ -1,6 +1,7 @@
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Navbar_itens from "../components/Navbar_itens"
 import Footer from "../components/Footer"
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 
 export default function Descrição(){
     return(
@@ -29,7 +30,11 @@ export default function Descrição(){
                 </View>
         </View>
         <Footer/>
+        <TouchableOpacity>
+        <MaterialCommunityIcons style={styles.add} name="pencil-circle" size={50} color="red" />
+        </TouchableOpacity>
         </>
+        
 )}
 
 const styles = StyleSheet.create({
@@ -43,5 +48,10 @@ const styles = StyleSheet.create({
     },
     titulo:{
         fontWeight: "bold"
+    },
+    add:{
+        position: "absolute",
+        right: 10,
+        bottom: 60
     }
 })

@@ -1,5 +1,5 @@
 import {View, StyleSheet, Text} from 'react-native'
-import { AntDesign, Ionicons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 type InputProps={
     titulo: string
@@ -11,7 +11,7 @@ function Navbar_itens({titulo}: InputProps){
             <View style={styles.container}>
                 <AntDesign name="arrowleft" size={24} color="white" />
                 <Text style={styles.texto}>{titulo}</Text>
-                <Ionicons name="add-circle-outline" size={24} color="white" />
+                <AntDesign name="pluscircleo" size={24} color="white" />
             </View>
         </View>
     )
