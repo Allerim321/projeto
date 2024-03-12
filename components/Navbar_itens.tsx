@@ -1,20 +1,15 @@
 import {View, StyleSheet, Text} from 'react-native'
-import { AntDesign } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 
 
-type NavbarProps = {
-    titulo: string
-    }
-
-function Navbar_itens({titulo}: NavbarProps){
+function Navbar_itens({...props}){
     return(
         <>
         <StatusBar backgroundColor="black"/>
             <View style={styles.container}>
-                <AntDesign name="arrowleft" size={24} color="white" />
-                <Text style={styles.texto}>{titulo}</Text>
-                <AntDesign name="pluscircleo" size={24} color="white" />
+                {props.iconeD}
+                <Text style={styles.texto}>{props.titulo}</Text>
+                {props.iconeE}
             </View>
         </>
     )

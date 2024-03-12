@@ -1,13 +1,16 @@
 import Navbar_itens from "../components/Navbar_itens"
 import Footer from "../components/Footer"
 import {View, Image, StyleSheet} from 'react-native'
+import { AntDesign } from '@expo/vector-icons';
+
 
 function Scanner(){
     return(
         <>
-            <Navbar_itens titulo="Scanner"/>
+            <Navbar_itens iconeD={<AntDesign name="arrowleft" size={24} color="white" />}
+            titulo="Scanner" iconeE={<AntDesign name="reload1" size={24} color="white"/>}/>
             <View style={styles.container}>
-                <Image style={styles.imagem} source={require("../assets/code_scaner.png")}/>
+                <Image style={styles.imagem} source={require("../assets/code_scanner.png")}/>
             </View>
             <Footer/>
         </>
@@ -17,9 +20,11 @@ function Scanner(){
 const styles = StyleSheet.create({
     container: {
         flex:1,
+        alignItems: "center",
+        justifyContent: "center"
     },
     imagem: {
-        width: 100
+        width: 300
     }
 })
 
