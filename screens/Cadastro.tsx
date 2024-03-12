@@ -9,13 +9,17 @@ function Cadastro(){
         <View style={styles.cor}>
         <Header texto="Cadastre-se"/>
         </View>
-        <Input texto="Nome:" placeholder="Insira seu nome"/>
-        <Input texto="Sobrenome:" placeholder="Insira seu sobrenome"/>
-        <Input texto="Email:" placeholder="Insira seu email"/>
-        <Input texto="Telefone:" placeholder="Insira seu telefone"/>
-        <Input texto="Senha:" placeholder="Insira sua senha"/>
-        <Input texto="Confirmar senha:" placeholder="Confirme sua senha"/>
-        <Botao/>
+        <View style={styles.container}>
+            <Input texto="Nome:" placeholder="Insira seu nome"/>
+            <Input texto="Sobrenome:" placeholder="Insira seu sobrenome"/>
+            <Input texto="Email:" placeholder="Insira seu email"/>
+            <Input texto="Telefone:" placeholder="Insira seu telefone"/>
+            <Input texto="Senha:" placeholder="Insira sua senha"/>
+            <Input texto="Confirmar senha:" placeholder="Confirme sua senha"/>
+            <View style={styles.botao}>
+                <Botao/>
+            </View>
+            </View>
         </ScrollView>
     )
 }
@@ -26,6 +30,12 @@ const styles = StyleSheet.create({
         padding: 50,
         paddingBottom: 20,
         marginBottom: 20,
+    },
+    botao:{
+        marginBottom: 20
+    },
+    container: {
+        alignItems: "center"
     }
 })
 

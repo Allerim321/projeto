@@ -10,14 +10,16 @@ function Login () {
       <View style={styles.cor_header}>
         <Header texto="Login"/>
       </View>
-    <View style={styles.texto}>
-    <Text >Faça login para acessar o sistema</Text></View>
-    <Input texto="Email:" placeholder="Digite seu email"/>
-    <Input texto="Senha:" placeholder="Digite sua senha"/>
-    <Botao />
-    <View style={styles.links}>
-    <Text style={styles.cor}>Cadastre-se</Text>
-    <Text style={styles.cor}>Esqueceu a senha?</Text>
+    <View style={styles.container}>
+      <View style={styles.texto}>
+        <Text >Faça login para acessar o sistema</Text></View>
+        <Input texto="Email:" placeholder="Digite seu email"/>
+        <Input texto="Senha:" placeholder="Digite sua senha"/>
+        <Botao />
+        <View style={styles.links}>
+        <Text style={styles.cor}>Cadastre-se</Text>
+        <Text style={styles.cor}>Esqueceu a senha?</Text>
+      </View>
     </View>
     </View>
     )
@@ -41,8 +43,11 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         flexDirection: "row"
     },
-    cor:{
+    cor: {
         color: "#011E83"
+    },
+    container: {
+        alignItems: "center"
     }
   })
 

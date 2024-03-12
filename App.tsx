@@ -9,7 +9,7 @@ import Scanner from "./screens/Scanner";
 
 const App = () => {
   return(
-    <AddItems />
+    <Login />
   )
 }
 
