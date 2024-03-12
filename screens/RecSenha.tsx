@@ -9,11 +9,13 @@ function RecSenha() {
           <View style={styles.cor}>
             <Header texto="Recuperação de Senha"/>
           </View>
-          <View style={styles.texto}>
-            <Text>Insira seu email para recuperar a senha.</Text>
-          </View>
-            <Input texto="Email:" placeholder="Insira seu email"/>
-            <Botao/>
+          <View style={styles.container}>
+            <View style={styles.texto}>
+              <Text>Insira seu email para recuperar a senha.</Text>
+            </View>
+              <Input texto="Email:" placeholder="Insira seu email"/>
+              <Botao/>
+            </View>
         </View>
     )
 }
@@ -29,6 +31,9 @@ const styles = StyleSheet.create({
     texto: {
       margin: 20,
       alignItems: "center",
+    },
+    container: {
+      alignItems: "center"
     }
   })
 
