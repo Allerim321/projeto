@@ -29,18 +29,21 @@ export default function AddInput({texto, ...props}:InputProps){
             borderWidth: 1,
             paddingLeft: 35,
             borderColor: hover
+        },
+        asterisco: {
+            color: "red"
         }
     })
 
     return(
         <View>
             <View style={styles.inputContainer}>
-            <Text style={styles.label}>{texto}</Text>
-            <TextInput {...props} style={styles.input} onFocus={() =>{
-            setHover('#F39200')
-            }} onBlur={() =>{
-            setHover('#5d5c5c')
-            }}
+                    <Text style={styles.label}>{texto}<Text style={styles.asterisco}> *</Text></Text>
+                <TextInput {...props} style={styles.input} onFocus={() =>{
+                setHover('#F39200')
+                }} onBlur={() =>{
+                setHover('#5d5c5c')
+                }}
             />
             </View>
         </View>

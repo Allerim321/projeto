@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
     add:{
         position: "absolute",
         right: 10,
-        bottom: 60
+        bottom: 70
     }
 })

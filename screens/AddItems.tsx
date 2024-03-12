@@ -7,8 +7,6 @@ import { AntDesign } from '@expo/vector-icons';
 
 function AddItems(){
 
-
-
     return(
         <>
             <Navbar_itens iconeD={<AntDesign name="arrowleft" size={24} color="white" />}
