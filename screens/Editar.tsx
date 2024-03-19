@@ -1,8 +1,8 @@
-import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 import Navbar_itens from "../components/Navbar_itens"
 import AddInput from "../components/AddInputs"
 import Footer from "../components/Footer"
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
+import {View, StyleSheet} from 'react-native'
 
 export default function Editar(){
     return(
