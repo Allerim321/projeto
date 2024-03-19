@@ -6,10 +6,11 @@ import Inventario from "./screens/Inventarios";
 import AddItems from "./screens/AddItems";
 import Descrição from "./screens/Descricao";
 import Scanner from "./screens/Scanner";
+import Editar from "./screens/Editar";
 
 const App = () => {
   return(
-    <Scanner />
+    <Editar />
   )
 }
 

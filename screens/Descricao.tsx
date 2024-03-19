@@ -11,7 +11,7 @@ export default function Descrição(){
             <View style={styles.container}>
                 <View style={styles.conjunto}>
                     <Text style={styles.titulo}>N° do inventário:</Text>
-                    <Text>957689</Text>
+                    <Text style={styles.texto}>957689</Text>
                 </View>
                 <View style={styles.conjunto}>
                     <Text style={styles.titulo}>Descrição:</Text>
@@ -54,5 +54,8 @@ const styles = StyleSheet.create({
         position: "absolute",
         right: 10,
         bottom: 70
+    },
+    texto:{ 
+        color: "#595959"
     }
 })

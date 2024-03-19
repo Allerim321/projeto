@@ -12,11 +12,11 @@ function AddItems(){
             <Navbar_itens iconeD={<AntDesign name="arrowleft" size={24} color="white" />}
             titulo="Cadastro de itens" iconeE={<AntDesign name="pluscircleo" size={24} color="white" />}/>
             <View style={styles.container}>
-                <AddInput texto="N° Inventário"/>
-                <AddInput texto="Descrição"/>
-                <AddInput texto="Responsável"/>
-                <AddInput texto="Local"/>
-                <AddInput texto="Data de registro"/>
+                <AddInput texto="N° Inventário" conteudo=""/>
+                <AddInput texto="Descrição" conteudo=""/>
+                <AddInput texto="Responsável" conteudo=""/>
+                <AddInput texto="Local" conteudo=""/>
+                <AddInput texto="Data de registro" conteudo=""/>
             </View>
             <Footer/>
         </>
