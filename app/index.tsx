@@ -3,6 +3,7 @@ import Botao from "../components/Botao";
 import Header from "../components/Header";
 import Input from "../components/Inputs";
 import React from 'react';
+import { Link } from 'expo-router';
 
 function Login () {
     return(
@@ -15,10 +16,10 @@ function Login () {
         <Text >Faça login para acessar o sistema</Text></View>
         <Input texto="Email:" placeholder="Digite seu email"/>
         <Input texto="Senha:" placeholder="Digite sua senha"/>
-        <Botao />
+        <Link href="/Inventarios" asChild><Botao texto="Entrar"/></Link>
         <View style={styles.links}>
-        <Text style={styles.cor}>Cadastre-se</Text>
-        <Text style={styles.cor}>Esqueceu a senha?</Text>
+        <Link href="/Cadastro" asChild><Text style={styles.cor}>Cadastre-se</Text></Link>
+        <Link href="/RecSenha" asChild><Text style={styles.cor}>Esqueceu a senha?</Text></Link>
       </View>
     </View>
     </View>

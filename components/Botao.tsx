@@ -1,11 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
-function Botao() {
+interface props extends TouchableOpacityProps {
+    texto: string;
+};
+
+function Botao({texto, ...props}: props){
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Cadastre-se</Text>
+            <TouchableOpacity {...props} style={styles.button}>
+                <Text style={styles.buttonText}>{texto}</Text>
             </TouchableOpacity>
         </View>
     );

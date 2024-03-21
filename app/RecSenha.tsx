@@ -1,6 +1,7 @@
 import Input from "../components/Inputs";
 import Header from "../components/Header";
 import Botao from "../components/Botao";
+import { Link } from "expo-router";
 import {View, Text, StyleSheet} from "react-native";
 
 function RecSenha() {
@@ -14,7 +15,7 @@ function RecSenha() {
               <Text>Insira seu email para recuperar a senha.</Text>
             </View>
               <Input texto="Email:" placeholder="Insira seu email"/>
-              <Botao/>
+              <Link href="/index" asChild><Botao texto="Recuperar senha"/></Link>
             </View>
         </View>
     )
