@@ -3,14 +3,14 @@ import Navbar_itens from "../components/Navbar_itens"
 import Footer from "../components/Footer"
 import {View, StyleSheet} from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
-
+import { Link } from 'expo-router';
 
 function AddItems(){
 
     return(
         <>
-            <Navbar_itens iconeD={<AntDesign name="arrowleft" size={24} color="white" />}
-            titulo="Cadastro de itens" iconeE={<AntDesign name="pluscircleo" size={24} color="white" />}/>
+            <Navbar_itens iconeD={<Link href="/Inventarios" asChild><AntDesign name="arrowleft" size={24} color="white" /></Link>}
+            titulo="Cadastro de itens" iconeE={<Link href="/Inventarios" asChild><AntDesign name="pluscircleo" size={24} color="white" /></Link>}/>
             <View style={styles.container}>
                 <AddInput texto="N° Inventário" conteudo=""/>
                 <AddInput texto="Descrição" conteudo=""/>

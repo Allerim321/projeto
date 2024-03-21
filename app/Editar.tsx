@@ -3,12 +3,13 @@ import Navbar_itens from "../components/Navbar_itens"
 import AddInput from "../components/AddInputs"
 import Footer from "../components/Footer"
 import {View, StyleSheet} from 'react-native'
+import { Link } from 'expo-router';
 
 export default function Editar(){
     return(
         <>
-            <Navbar_itens iconeD={<AntDesign name="arrowleft" size={24} color="white" />}
-            titulo="Descrição de itens" iconeE={<AntDesign name="checkcircle" size={24} color="white" />}/>
+            <Navbar_itens iconeD={<Link href="/Descricao" asChild><AntDesign name="arrowleft" size={24} color="white" /></Link>}
+            titulo="Editar" iconeE={<Link href="/Descricao" asChild><AntDesign name="checkcircle" size={24} color="white" /></Link>}/>
             <View style={styles.container}>
             <AddInput texto="N° Inventário" conteudo="957689"/>
                 <AddInput texto="Descrição" conteudo="Cadeira giratória"/>

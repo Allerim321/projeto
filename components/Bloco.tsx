@@ -3,6 +3,7 @@ import {View, Text, StyleSheet} from "react-native";
 function Bloco() {
     return(
         <View style={styles.textos}>
+
             <Text style={styles.numero}>956389</Text>
             <Text>CADEIRA SENAI</Text>
         </View>

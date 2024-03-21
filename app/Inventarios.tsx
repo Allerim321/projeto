@@ -1,6 +1,7 @@
 import {ScrollView, View, Text, StyleSheet, TouchableOpacity} from "react-native";
 import { Feather, Octicons, MaterialCommunityIcons, Foundation, Ionicons } from '@expo/vector-icons';
 import Bloco from "../components/Bloco";
+import { Link } from 'expo-router';
 
 function Inventario(){
     return(
@@ -11,23 +12,60 @@ function Inventario(){
             <Text>Lista</Text>
             <Feather name="search" size={24} color="black" />
             </View>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
             <Bloco />
+            </Link>
+            <Link href="/Descricao">
+            <Bloco />
+            </Link>
+            <Link href="/Descricao">
+            <Bloco />
+            </Link>
+            <Link href="/Descricao">
+            <Bloco />
+            </Link>
         </ScrollView>
-        <TouchableOpacity>
-        <Ionicons style={styles.add} name="add-circle-sharp" size={50} color="red" />
-        </TouchableOpacity>
+        <Link href="/AddItems" asChild>
+            <TouchableOpacity>
+            <Ionicons style={styles.add} name="add-circle-sharp" size={50} color="red" />
+            </TouchableOpacity>
+        </Link>
         <View style={styles.footer}>
             <View style={styles.icons_footer}>
                 <MaterialCommunityIcons style={styles.separar_icons} name="camera-flip-outline" size={24} color="white" />

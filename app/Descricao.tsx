@@ -2,11 +2,12 @@ import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 import Navbar_itens from "../components/Navbar_itens"
 import Footer from "../components/Footer"
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
+import { Link } from 'expo-router';
 
 export default function Descrição(){
     return(
         <>
-            <Navbar_itens iconeD={<AntDesign name="arrowleft" size={24} color="white" />}
+            <Navbar_itens iconeD={<Link href="/Inventarios" asChild><AntDesign name="arrowleft" size={24} color="white"/></Link>}
             titulo="Descrição de itens" iconeE={<AntDesign name="reload1" size={24} color="white"/>}/>
             <View style={styles.container}>
                 <View style={styles.conjunto}>
@@ -31,9 +32,11 @@ export default function Descrição(){
                 </View>
         </View>
         <Footer/>
+        <Link href="/Editar" asChild>
         <TouchableOpacity>
         <MaterialCommunityIcons style={styles.add} name="pencil-circle" size={50} color="red" />
         </TouchableOpacity>
+        </Link>
         </>
         
 )}
