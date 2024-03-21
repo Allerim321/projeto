@@ -12,54 +12,22 @@ function Inventario(){
             <Text>Lista</Text>
             <Feather name="search" size={24} color="black" />
             </View>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
-            <Link href="/Descricao">
             <Bloco />
-            </Link>
         </ScrollView>
         <Link href="/AddItems" asChild>
             <TouchableOpacity>
