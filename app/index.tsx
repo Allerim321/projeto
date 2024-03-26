@@ -16,7 +16,7 @@ function Login () {
         <Text >Faça login para acessar o sistema</Text></View>
         <Input texto="Email:" placeholder="Digite seu email"/>
         <Input texto="Senha:" placeholder="Digite sua senha"/>
-        <Link href="/Inventarios" asChild><Botao texto="Entrar"/></Link>
+          <Botao href="drawer" texto="Entrar"/>
         <View style={styles.links}>
         <Link href="/Cadastro" asChild><Text style={styles.cor}>Cadastre-se</Text></Link>
         <Link href="/RecSenha" asChild><Text style={styles.cor}>Esqueceu a senha?</Text></Link>

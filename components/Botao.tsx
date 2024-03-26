@@ -1,17 +1,18 @@
-import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableOpacityProps } from 'react-native';
+import { Link } from 'expo-router'
+import { LinkProps } from 'next/link'
+import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 
-interface props extends TouchableOpacityProps {
+interface props extends LinkProps {
     texto: string;
 };
 
 function Botao({texto, ...props}: props){
     return (
-        <View style={styles.container}>
+        <Link {...props} style={styles.container} asChild>
             <TouchableOpacity {...props} style={styles.button}>
                 <Text style={styles.buttonText}>{texto}</Text>
             </TouchableOpacity>
-        </View>
+        </Link>
     );
 }
 

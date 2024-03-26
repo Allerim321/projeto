@@ -1,6 +1,6 @@
 import {ScrollView, View, Text, StyleSheet, TouchableOpacity} from "react-native";
 import { Feather, Octicons, MaterialCommunityIcons, Foundation, Ionicons } from '@expo/vector-icons';
-import Bloco from "../components/Bloco";
+import Bloco from "../../../components/Bloco";
 import { Link } from 'expo-router';
 
 function Inventario(){
